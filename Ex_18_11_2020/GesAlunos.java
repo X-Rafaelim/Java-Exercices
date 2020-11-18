@@ -34,8 +34,11 @@ public class GesAlunos {
         alunost2.add(alun9);
         alunost2.add(alun10);
         Turma turma2 = new Turma(2,alunost2);
-        System.out.println("PESSOAS MENORES \n" + contaMenores(turma2));
-        System.out.println("PESSOAS media boa  \n" + contaMedia(turma2));
+        System.out.println("Pessoas menores");
+        System.out.println(contaMenores(turma2));
+        System.out.println("---------------------------------");
+        System.out.println("Pessoas media boa");
+        System.out.println(contaMedia(turma2));
 
 
 
@@ -65,4 +68,4 @@ public class GesAlunos {
         return contador;
     }
 }
-//FIcheiro atualizado teste 
+//FIcheiro atualizado teste
