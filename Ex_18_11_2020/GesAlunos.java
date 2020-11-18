@@ -8,14 +8,14 @@ public class GesAlunos {
 
         //objetos criados com seus criterios
         Aluno alun1 = new Aluno("Rafael",19,"rakitir@gmail.com", 17.10);
-        Aluno alun2 = new Aluno("Mario",90,"mariogod@gmail.com", 15.10);
+        Aluno alun2 = new Aluno("Mario",90,"mariogod@gmail.com", 5.10);
         Aluno alun3 = new Aluno("Roberto",30,"roberoplays@gmail.com", 14.90);
         Aluno alun4 = new Aluno("Marco",29,"craquezao@gmail.com", 13.60);
         Aluno alun5 = new Aluno("Luis",15,"progamer@gmail.com", 11.80);
         Aluno alun6 = new Aluno("Rodrigo",16,"rodrigyout@gmail.com", 14.60);
         Aluno alun7 = new Aluno("Joao",19,"jonnybrave@gmail.com", 12.10);
         Aluno alun8 = new Aluno("Marcelo",18,"marceloking@gmail.com", 11.00);
-        Aluno alun9 = new Aluno("Hogo",13,"marborofumaças@gmail.com", 10.10);
+        Aluno alun9 = new Aluno("Hogo",13,"marborofumaças@gmail.com", 6.10);
         Aluno alun10 = new Aluno("Emiliano",23,"firmamarreta@gmail.com", 12.90);
 
 
@@ -31,7 +31,7 @@ public class GesAlunos {
         //criação dad lista anlunost2 para que seja usada na segunda turma
         ArrayList<Aluno> alunost2 = new ArrayList<Aluno>();
 
-        //adicionando os objetos a lista alunost2 para serem usado para a turma 2 
+        //adicionando os objetos a lista alunost2 para serem usado para a turma 2
         alunost2.add(alun6);
         alunost2.add(alun7);
         alunost2.add(alun8);
@@ -41,10 +41,10 @@ public class GesAlunos {
         Turma turma2 = new Turma(2,alunost2);
 
         System.out.println("Pessoas menores");
-        System.out.println(contaMenores(turma2));
+        System.out.println(contaMenores(turma1));
         System.out.println("---------------------------------");
         System.out.println("Pessoas media boa");
-        System.out.println(contaMedia(turma2));
+        System.out.println(contaMedia(turma1));
 
 
 
