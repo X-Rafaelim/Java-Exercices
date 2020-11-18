@@ -18,6 +18,12 @@ public class Turma {
     }
 
     //getters
+    public int getId_alunos(){
+        return this.id_alunos = id_alunos;
+    }
+    public String getAlunos(){
+        return this.alunos = alunos;
+    }
 
 
 }
