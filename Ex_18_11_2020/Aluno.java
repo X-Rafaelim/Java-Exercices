@@ -34,13 +34,13 @@ public class Aluno {
     public String getNome(){
         return this.nome = nome;
     }
-    public int setIdade(){
+    public int getIdade(){
         return this.idade = idade;
     }
-    public String setEmail(){
+    public String getEmail(){
         return this.email = email;
     }
-    public double setMedia_curso(){
+    public double getMedia_curso(){
         return this.media_curso = media_curso;
     }
 

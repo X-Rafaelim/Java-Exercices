@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.concurrent.TransferQueue;
 
 public class GesAlunos {
     public static void main(String[] args) {
@@ -18,23 +19,49 @@ public class GesAlunos {
         Aluno alun10 = new Aluno("Emiliano",23,"firmamarreta@gmail.com", 12.90);
 
 
+
         aluno.add(alun1);
         aluno.add(alun2);
         aluno.add(alun3);
         aluno.add(alun4);
         aluno.add(alun5);
-        aluno.add(alun6);
-        aluno.add(alun7);
-        aluno.add(alun8);
-        aluno.add(alun9);
-        aluno.add(alun10);
+        Turma turma1 = new Turma(1,aluno);
+        ArrayList<Aluno> alunost2 = new ArrayList<Aluno>();
+
+        alunost2.add(alun6);
+        alunost2.add(alun7);
+        alunost2.add(alun8);
+        alunost2.add(alun9);
+        alunost2.add(alun10);
+        Turma turma2 = new Turma(2,alunost2);
+        System.out.println("PESSOAS MENORES \n" + contaMenores(turma2));
+        System.out.println("PESSOAS media boa  \n" + contaMedia(turma2));
 
 
-        for (int i = 0; i < aluno.size(); i++){
-            System.out.println(aluno.get(i).getNome());
+
+    }
+
+    public static int contaMenores(Turma turma){
+        int contador = 0;
+        for (int i = 0; i< turma.getAlunos().size();i++){
+            if (turma.getAlunos().get(i).getIdade() < 18){
+                System.out.println(turma.getAlunos().get(i).getNome());
+                contador++;
+            }
         }
 
+        return contador;
 
+    }
 
+    public static int contaMedia(Turma turma){
+        int contador = 0;
+        for (int i = 0; i< turma.getAlunos().size();i++){
+            if (turma.getAlunos().get(i).getMedia_curso() >= 10.00){
+                System.out.println(turma.getAlunos().get(i).getNome());
+                contador++;
+            }
+        }
+        return contador;
     }
 }
